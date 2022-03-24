@@ -2,7 +2,8 @@ const getRecordNumber = async () => {
   const baseUrl = 'https://collectionapi.metmuseum.org'
   const artworkRecords2 =
     '/public/collection/v1/objects?departmentIds=21&hasImages=true'
-    const artworkRecords = '/public/collection/v1/search?hasImages=true&isHighlight=true&q=purple'
+  const artworkRecords =
+    '/public/collection/v1/search?hasImages=true&isHighlight=true&q=purple'
 
   const metUrl = baseUrl.concat(artworkRecords)
 
@@ -22,23 +23,18 @@ const getRecordNumber = async () => {
     })
     .then((result) => result.json())
     .then((mydata) => {
-        const existingImage = document.getElementById('metArtworkImage')
-        existingImage === null ? '' : existingImage.parentNode.removeChild(existingImage)
-    
-      console.log('accession number ', mydata.accessionNumber)
-      console.log('primaryImage ', mydata.primaryImage)
+      const existingImage = document.getElementById('metArtworkImage')
+      existingImage === null
+        ? ''
+        : existingImage.parentNode.removeChild(existingImage)
 
-      console.log('is this the record? ', mydata)
+      console.log('accession number: ', mydata.accessionNumber)
+      console.log('primaryImage: ', mydata.primaryImage)
+
+      console.log('this is the artwork record: ', mydata)
       const myImg = document.createElement('img')
-    //   myImg.src = mydata.primaryImage
-    myImg.src = mydata.primaryImage
-    myImg.id = 'metArtworkImage'
-
-
-
-    
-    console.log('src is: ', mydata.primaryImage)
-
+      myImg.src = mydata.primaryImage
+      myImg.id = 'metArtworkImage'
       document.querySelector('.imageContainer').appendChild(myImg)
     })
 }
