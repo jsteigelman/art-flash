@@ -28,13 +28,24 @@ const getRecordNumber = async () => {
         ? ''
         : existingImage.parentNode.removeChild(existingImage)
 
+      const existingTitle = document.getElementById('metArtworkTitle')
+      existingTitle === null
+        ? ''
+        : existingTitle.parentNode.removeChild(existingTitle)
+
       console.log('accession number: ', mydata.accessionNumber)
       console.log('primaryImage: ', mydata.primaryImage)
+      console.log('this is the artwork title: ', mydata.title)
 
       console.log('this is the artwork record: ', mydata)
       const myImg = document.createElement('img')
+      const myCaption = document.createElement('h1')
       myImg.src = mydata.primaryImage
       myImg.id = 'metArtworkImage'
+      myCaption.id = 'metArtworkTitle'
+      myCaption.textContent = mydata.title
       document.querySelector('.imageContainer').appendChild(myImg)
+      document.querySelector('.captionContainer').appendChild(myCaption)
+
     })
 }
