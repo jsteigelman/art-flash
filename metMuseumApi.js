@@ -1,4 +1,4 @@
-const getRecordNumber = async () => {
+const getArtworkRecord = async () => {
   const baseUrl = 'https://collectionapi.metmuseum.org'
   const artworkRecords2 =
     '/public/collection/v1/objects?departmentIds=21&hasImages=true'
