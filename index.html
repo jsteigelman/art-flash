@@ -7,15 +7,21 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="outerContainer">
-      <div class="containerLeft">
-        <div class="imageContainer"></div>
-      </div>
-      <div class="containerRight">
-        <button onclick="getRecordNumber()">Get Random Artwork</button>
-      </div>
+        <div class="innerContainer">
+            <div class="containerLeft">
+                <div class="imageContainer"></div>
+              </div>
+              <div class="containerRight">
+                <button onclick="getRecordNumber()">Get Random Artwork</button>
+              </div>
+        </div>
+
     </div>
 
     <script src="./metMuseumApi.js" async defer></script>

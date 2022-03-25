@@ -1,10 +1,19 @@
 .outerContainer {
     /* background-image: linear-gradient(#DB74FF, #8894FF); */
-    background-color: #fff;
+    background-color: pink;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.innerContainer {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    width: 80%;
+    height: 80vh;
 }
 
 .containerLeft {
@@ -48,7 +57,7 @@ button {
     padding: 24px;
     font-size: 32px;
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Prata', serif;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
