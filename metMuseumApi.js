@@ -1,9 +1,7 @@
 const getArtworkRecord = async () => {
   const baseUrl = 'https://collectionapi.metmuseum.org'
-  const artworkRecords2 =
-    '/public/collection/v1/objects?departmentIds=21&hasImages=true'
   const artworkRecords =
-    '/public/collection/v1/search?hasImages=true&isHighlight=true&q=purple'
+    '/public/collection/v1/objects?departmentIds=11&objectName=Painting&hasImages=true'
 
   const metUrl = baseUrl.concat(artworkRecords)
 
