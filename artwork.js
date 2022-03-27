@@ -1,30 +1,21 @@
 const https = require('https')
-
-// const metUrl =
-//   'https://collectionapi.metmuseum.org/public/collection/v1/objects/45734'
-
 const baseUrl = 'https://collectionapi.metmuseum.org'
 
-// returns a list of art departments
-const departments = '/public/collection/v1/departments'
-
-// returns a list of artwork records by department
-const photographyDept = '19'
+// get object records by department
+const allDepartments = '/public/collection/v1/departments'
+const photographyDepartment = '19'
 const selectedDepartment = '/public/collection/v1/objects?departmentIds=' + photographyDept
 
-// returns a list of all valid Object IDs available to use
-const objects = '/public/collection/v1/objects'
-
-// returns a record for an object, containing all open access data about that object, including its image (if the image is available under Open Access)
+// get single object record
 const specifiedObjectId = '259569'
 const objectRecord = '/public/collection/v1/objects/' + specifiedObjectId
 
-// search for highlights, with keyword 'purple', that have images
+// get records according to custom filters
+// highlights, with keyword 'purple', that have images
 const highlights = '/public/collection/v1/search?hasImages=true&isHighlight=true&q=purple'
 
 // url to query
 const metUrl = baseUrl + departments
-
 console.log('The url I am querying is: ' + metUrl)
 
 https
