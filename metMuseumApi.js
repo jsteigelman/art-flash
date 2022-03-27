@@ -20,30 +20,38 @@ const getArtworkRecord = async () => {
       return fetch(objectRecordUrl)
     })
     .then((result) => result.json())
-    .then((mydata) => {
-      const existingImage = document.getElementById('metArtworkImage')
-      existingImage === null
-        ? ''
-        : existingImage.parentNode.removeChild(existingImage)
+    .then((artworkRecord) => {
+      console.log('accession number: ', artworkRecord.accessionNumber)
+      console.log('primaryImage: ', artworkRecord.primaryImage)
+      console.log('this is the artwork title: ', artworkRecord.title)
 
-      const existingTitle = document.getElementById('metArtworkTitle')
-      existingTitle === null
-        ? ''
-        : existingTitle.parentNode.removeChild(existingTitle)
+      console.log('this is the artwork record: ', artworkRecord)
 
-      console.log('accession number: ', mydata.accessionNumber)
-      console.log('primaryImage: ', mydata.primaryImage)
-      console.log('this is the artwork title: ', mydata.title)
+      // delete the existing caption
+      const captionSection = document.querySelector('.captionContainer')
+      captionSection.innerHTML = ''
 
-      console.log('this is the artwork record: ', mydata)
-      const myImg = document.createElement('img')
-      const myCaption = document.createElement('h1')
-      myImg.src = mydata.primaryImage
-      myImg.id = 'metArtworkImage'
-      myCaption.id = 'metArtworkTitle'
-      myCaption.textContent = mydata.title
-      document.querySelector('.imageContainer').appendChild(myImg)
-      document.querySelector('.captionContainer').appendChild(myCaption)
+      // delete the existing image
+      const imageSection = document.querySelector('.imageContainer')
+      imageSection.innerHTML = ''
 
+      // save artwork image
+      const artworkImage = document.createElement('img')
+      artworkImage.src = artworkRecord.primaryImage
+
+      // create artwork caption
+      const captionTitle = document.createElement('h1')
+      const captionArtistName = document.createElement('p')
+      const captionArtistBio = document.createElement('p')
+
+      // update artwork caption
+      captionTitle.textContent = artworkRecord.title
+      captionArtistName.textContent = artworkRecord.artistDisplayName
+      captionArtistBio.textContent = artworkRecord.artistDisplayBio
+
+      // update image and caption
+      imageSection.appendChild(artworkImage)
+      captionSection.appendChild(captionTitle)
+      captionSection.appendChild(captionArtistName)
     })
 }
