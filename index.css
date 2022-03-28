@@ -29,28 +29,30 @@
 }
 
 .innerContainer--headerSection {
-    /* border-bottom: 2px solid gray; */
     padding: 0px;
+    padding-left: var(--margin-inner-container);
+    padding-right: var(--margin-inner-container);
+
     font-size: 30px;
     font-family: Helvetica, Arial, sans-serif;
     height: var(--height-header);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: pink; */
 }
 
 .innerContainer--headerSection p {
-    padding: 10px;
+    padding: 18px 0 10px 0;
     margin: 0;
     vertical-align: center;
+
 }
 
 .horizontalLine {
     height: 2px;
     background: #E5E5E5;
     /* margin: 0 var(--margin-inner-container); */
-    margin: 8px 20px 0;
+    margin: 8px 0px 0;
 }
 
 .innerContainer--artworkSection {
