@@ -25,8 +25,9 @@ const getArtworkRecord = async () => {
       console.log('this is the artwork record: ', artworkRecord)
 
       // remove the start page
-      const startPage = document.querySelector('.startScreen')
-      document.querySelector('.innerContainer--artworkSection').removeChild(startPage)
+      if (document.querySelector('.startScreen') !== null) {
+        document.querySelector('.startScreen').remove()
+      }
 
       // delete the existing image
       const imageSection = document.querySelector('.imageContainer')
