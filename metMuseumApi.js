@@ -35,6 +35,9 @@ const getArtworkRecord = async () => {
       const artworkImage = document.createElement('img')
       artworkImage.src = artworkRecord.primaryImageSmall
 
+      //test to delete!
+      myArtist = artworkRecord.title
+
       // update table with artwork data
       document.querySelector('#captionContainer--artistName').innerHTML = artworkRecord.artistDisplayName
       document.querySelector('#captionDate').innerHTML = artworkRecord.objectDate
@@ -48,5 +51,10 @@ const getArtworkRecord = async () => {
 
       // update image 
       imageSection.appendChild(artworkImage)
+
+      // add support for sharing artwork record by email
+      const emailLink = document.querySelector('#emailLink')
+      const emailBody = encodeURIComponent(`Check out this artwork I found on ArtFlash:\n\n${artworkRecord.title} (${artworkRecord.objectDate}) by ${artworkRecord.artistDisplayName}\n${artworkRecord.objectURL}\n`)
+      emailLink.href = `mailto:?body=${emailBody}&subject=Check out this artwork I found on ArtFlash`
     })
 }
