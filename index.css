@@ -57,7 +57,6 @@ body {
 .horizontalLine {
     height: 2px;
     background: #E5E5E5;
-    /* margin: 0 var(--margin-inner-container); */
     margin: 8px 0px 0;
 }
 
@@ -130,6 +129,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* color: #E5E5E5; */
+    color: lightgray;
+
+}
+
+.topNav .currentMuseum {
+    color: #000;
 }
 
 #captionContainer--artistName {
@@ -160,6 +166,9 @@ body {
 
 }
 
+#tableLeftColumn {
+    padding-right: 120px;
+}
 
 img {
     max-width: 100%;
