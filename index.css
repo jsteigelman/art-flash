@@ -125,6 +125,12 @@ body {
     max-height: calc(100% - 80px);
 }
 
+.topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #captionContainer--artistName {
     font-size: var(--font-size-artist-name);
     font-weight: var(--font-weight-artist);
@@ -176,8 +182,9 @@ img {
 .startScreen {
     position: absolute;
     height: 100%;
-    background: aquamarine;
-    max-height: calc(100% - var(--height-header) - (var(--margin-inner-container) * 2));
+    background: #F8F4F3;
+    color: black;
+    max-height: calc(100% - (var(--margin-inner-container) * 2));
     width: calc(100% - (var(--margin-inner-container) * 2));
     display: flex;
     flex-direction: column;
@@ -190,8 +197,25 @@ img {
     width: 300px;
 }
 
-.startScreen--title {
-    font-size: 40px;
+.startScreen--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--margin-inner-container);
+    width: 600px;
+}
+
+.startScreen--text p {
+    margin: 0;
+    padding: 12px 0;
+    font-size: 24px;
+}
+
+h1.startScreen--text--title {
+    font-size: 56px;
+    font-weight: var(--font-weight-artist);
+    margin: 0;
 }
 
 .hideElement {

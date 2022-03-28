@@ -14,17 +14,23 @@
   <body>
     <div class="outerContainer">
       <div class="innerContainer">
+        <div class="startScreen">
+          <div class="startScreen--text">
+            <h1 class="startScreen--text--title">Welcome to ArtFlash!</h1>
+            <p>ArtFlash shows you random artworks from the collections of the Metropolitan Museum of Art, Smithsonian, and Getty.</p>
+            <p>Get started by clicking the button below!</p>  
+          </div>
+          <button onclick="getArtworkRecord()">Show me an artwork!</button>
+
+        </div>
+
         <div class="innerContainer--headerSection">
-          <p>ArtFlash</p>
+          <div class="topNav"><p>Metropolitan</p><p>Smithsonian</p><p>Getty</p></div>
+          <!-- <p>ArtFlash</p> -->
           <div class="horizontalLine"></div>
 
         </div>
         <div class="innerContainer--artworkSection">
-          <div class="startScreen">
-            <p class="startScreen--title">Welcome to ArtFlash!</p>
-            <button onclick="getArtworkRecord()">Show me an artwork!</button>
-
-          </div>
           <div class="containerLeft">
             <div class="imageContainer"></div>
           </div>
