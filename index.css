@@ -170,6 +170,12 @@ body {
     padding-right: 120px;
 }
 
+#captionMore {
+    color: #000;
+    font-size: calc(var(--font-size-caption) + 0px);
+    line-height: 34px;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;

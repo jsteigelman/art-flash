@@ -53,6 +53,8 @@ const getArtworkRecord = async () => {
       document.querySelector('#captionCollection').innerHTML = artworkRecord.repository
       const nationality = artworkRecord.artistDisplayBio.split(',')
       document.querySelector('#captionContainer--artistBio').innerHTML = `${nationality[0]}, ${artworkRecord.artistBeginDate} - ${artworkRecord.artistEndDate}`
+      const moreInfoLink = document.querySelector('#captionMore')
+      moreInfoLink.href = artworkRecord.objectURL
 
       // update image 
       imageSection.appendChild(artworkImage)
