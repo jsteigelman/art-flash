@@ -91,6 +91,10 @@ h3 {
     margin-top: 4px;
 }
 
+td {
+    vertical-align: top;
+}
+
 button {
     background-color: #fff;
     padding: 20px 0;
