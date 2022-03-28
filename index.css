@@ -1,5 +1,5 @@
 :root {
-    --margin-inner-container: 40px;
+    --margin-inner-container: 20px;
     --margin-caption: 20px;
 }
 
@@ -14,12 +14,25 @@
 
 .innerContainer {
     background-color: white;
+
+    width: calc(100% - (var(--margin-inner-container) * 2));
+    height: calc(100% - (var(--margin-inner-container) * 2));
+}
+
+.innerContainer--headerSection {
+    border-bottom: 2px solid gray;
+    padding: 28px 20px;
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.innerContainer--artworkSection {
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
-    margin: 40px;
-    width: calc(100% - (var(--margin-inner-container) * 2));
-    height: calc(100% - (var(--margin-inner-container) * 2));
+    margin: var(--margin-inner-container);
+
 }
 
 .containerLeft {
@@ -41,11 +54,15 @@
 .captionContainer {
     width: calc(100% - (var(--margin-caption) * 2));
     font-family: Helvetica, Arial, sans-serif;
+    margin-top: var(--margin-caption);
+}
+
+.captionContainer p, h1 {
+    margin: 0;
 }
 
 .imageContainer {
     width: 80%;
-    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -63,6 +80,14 @@ img {
     width: calc(100% - (var(--margin-caption) * 2));
 }
 
+.hideTable {
+    display: none;
+}
+
+h3 {
+    margin-top: 4px;
+}
+
 button {
     /* background-color: #F945D1; */
     background-color: #fff;
@@ -71,7 +96,7 @@ button {
     font-size: 16px;
     color: #000;
     font-family: Helvetica, serif;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin-caption);
     text-transform: uppercase;
     border: 2px solid black;
 }
