@@ -1,10 +1,12 @@
 :root {
     --margin-inner-container: 20px;
     --margin-caption: 20px;
+    --font-size-header: 30px;
+    --padding-vertical-header: 28px;
+
 }
 
 .outerContainer {
-    /* background-image: linear-gradient(#DB74FF, #8894FF); */
     background-color: #FEE333;
     height: 100vh;
     display: flex;
@@ -14,9 +16,11 @@
 
 .innerContainer {
     background-color: white;
-
     width: calc(100% - (var(--margin-inner-container) * 2));
     height: calc(100% - (var(--margin-inner-container) * 2));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .innerContainer--headerSection {
@@ -30,9 +34,8 @@
 .innerContainer--artworkSection {
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
     margin: var(--margin-inner-container);
-
+    height: 100%;
 }
 
 .containerLeft {
@@ -89,7 +92,6 @@ h3 {
 }
 
 button {
-    /* background-color: #F945D1; */
     background-color: #fff;
     padding: 20px 0;
     width: 100%;
