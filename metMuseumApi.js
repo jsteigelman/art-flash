@@ -24,12 +24,16 @@ const getArtworkRecord = async () => {
       console.log('primaryImage: ', artworkRecord.primaryImage)
       console.log('this is the artwork record: ', artworkRecord)
 
+      // remove the start page
+      const startPage = document.querySelector('.startScreen')
+      document.querySelector('.innerContainer--artworkSection').removeChild(startPage)
+
       // delete the existing image
       const imageSection = document.querySelector('.imageContainer')
       imageSection.innerHTML = ''
 
       // show caption table
-      document.querySelector(".captionTable").classList.remove("hideTable");
+      document.querySelector(".captionTable").classList.remove("hideElement");
 
       // save artwork image
       const artworkImage = document.createElement('img')
