@@ -2,17 +2,22 @@
     --margin-inner-container: 20px;
     --margin-caption: 20px;
     --font-size-header: 30px;
-    --font-size-artist-name: 38px;
+    --font-size-artist-name: 36px;
     --font-size-artist-bio: 22px;
     --font-weight-artist: 600;
-    --font-size-caption: 20px;
+    --font-size-caption: 18px;
     --padding-vertical-header: 28px;
     --height-header: 80px;
+    --font-family: Helvetica, Arial, sans-serif;
+    background-color: #FEE333;
 
 }
 
+body {
+    margin: 0;
+}
+
 .outerContainer {
-    background-color: #FEE333;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,7 +39,7 @@
     padding-right: var(--margin-inner-container);
 
     font-size: 30px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     height: var(--height-header);
     display: flex;
     flex-direction: column;
@@ -85,13 +90,28 @@
 
 .captionContainer {
     width: calc(100% - (var(--margin-caption) * 2));
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     overflow: scroll;
+    margin: 40px 0 44px;
+    flex-grow: 4;
+    flex-shrink: 4;
     /* margin-top: var(--margin-caption); */
 }
 
-.captionContainer p, h1 {
+.captionArtistContainer {
+    font-family: var(--font-family);
+    margin-left: var(--margin-caption);
+    margin-right: var(--margin-caption);
+    width: calc(100% - (var(--margin-caption) * 2));
+
+    /* width: calc(100% - (var(--margin-caption) * 2)); */
+
+}
+
+.captionArtistContainer p, h1 {
     margin: 0;
+    padding: 0;
+    
 }
 
 .imageContainer {
@@ -111,10 +131,21 @@
 
 #captionContainer--artistBio {
     font-size: var(--font-size-artist-bio);
-    margin: 4px 0 30px 0;
+    margin: 4px 0 0px 0;
     font-weight: var(--font-weight-artist);
     text-transform: uppercase;
 }
+
+#sendEmailLink {
+    font-size: 16px;
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+#sendEmailLink a {
+    color: black;
+}
+
 
 img {
     max-width: 100%;
@@ -127,6 +158,12 @@ img {
 
 .buttonContainer {
     width: calc(100% - (var(--margin-caption) * 2));
+}
+
+.captionTable {
+    overflow: scroll;
+    flex-grow: 1;
+    flex-shrink: 4;
 }
 
 .hideTable {
@@ -144,7 +181,7 @@ button {
     width: 100%;
     font-size: 16px;
     color: #000;
-    font-family: Helvetica, serif;
+    font-family: var(--font-family);
     margin-bottom: var(--margin-caption);
     text-transform: uppercase;
     border: 2px solid black;
