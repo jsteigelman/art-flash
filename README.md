@@ -18,5 +18,6 @@ This website is currently in progress! Art Flash uses APIs from the Metropolitan
 * [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/) - API to retrieve object records for artwork in the collection of the Metropolitan Museum of Art
 * [Smithsonian Institution Open Access API](https://edan.si.edu/openaccess/apidocs/) - API to retrieve object records for artwork in the collection of the Smithsonian Institution
 
-<!-- ## Website Preview
- -->
+## Website Preview
+<img width="600" alt="Preview_ArtFlash" src="https://user-images.githubusercontent.com/65603938/160521393-c1aced89-90a5-464a-ab7b-5408d9d0a32e.png">
+
