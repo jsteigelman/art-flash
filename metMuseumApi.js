@@ -3,6 +3,8 @@ const getArtworkRecord = async () => {
   const artworkRecords =
     '/public/collection/v1/objects?departmentIds=11&objectName=Painting&hasImages=true'
 
+    // const test = https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=Auguste Renoir
+
   const metUrl = baseUrl.concat(artworkRecords)
 
   fetch(metUrl)
@@ -28,6 +30,14 @@ const getArtworkRecord = async () => {
       if (document.querySelector('.startScreen') !== null) {
         document.querySelector('.startScreen').remove()
       }
+
+      if (artworkRecord.primaryImage.length === 0) {
+        console.log('no pic!!!')
+        document.querySelector('.imageContainer--text').innerHTML = 'The Met has not made this image available under Open Access.'
+      } else {
+        document.querySelector('.imageContainer--text').innerHTML = ''
+      }
+
 
       // delete the existing image
       const imageSection = document.querySelector('.imageContainer')

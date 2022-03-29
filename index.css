@@ -125,6 +125,15 @@ body {
     max-height: calc(100% - 80px);
 }
 
+.imageContainer--text {
+    color: red;
+    font-size: var(--font-size-caption);
+    font-size: 24px;
+    font-family: var(--font-family);
+    margin: 0;
+    text-align: center;
+}
+
 .topNav {
     display: flex;
     flex-direction: row;
