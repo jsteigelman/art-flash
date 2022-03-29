@@ -1,7 +1,7 @@
 # Art Flash
 
 ## Description
-This website is currently in progress! Art Flash uses APIs from the Metropolitan Museum of Art and Smithsonian Institution to display randomly selected artworks, and their cataloging information, to the user.
+This website is currently in progress! Art Flash presents an artwork record (containing the image and full cataloging information) to the curious user. The artworks are selected from the collections of the Metropolitan Museum of Art and Smithsonian Institution.
 
 ## Live Site URL
 [https://steigelman-art-flash.netlify.app/](https://steigelman-art-flash.netlify.app/)
