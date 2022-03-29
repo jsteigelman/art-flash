@@ -7,8 +7,10 @@ This website is currently in progress! Art Flash uses APIs from the Metropolitan
 [https://steigelman-art-flash.netlify.app/](https://steigelman-art-flash.netlify.app/)
 
 ## Functionality
-* User can retrieve a randomly chosen artwork record from the collection of the Metropolitan Museum of Art
-* * User can retrieve a randomly chosen artwork record from the collection of the Smithsonian Institution
+* User can retrieve an artwork record, at random, from the collection of the Metropolitan Museum of Art
+* User can retrieve an artwork record, at random, from the collection of the Smithsonian Institution
+* User can access information including the image, artist, title, date, medium, dimensions, and collection for each object record
+
 
 
 ## Built With
