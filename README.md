@@ -7,9 +7,10 @@
 This project was an exercise in vanilla JS! Art Flash presents an artwork record (containing the image and full cataloging information) to the curious user. The artworks are selected from the collections of the Metropolitan Museum of Art and the Art Institute of Chicago.
 
 ## Functionality
-* User can retrieve an artwork record, at random, from the collection of the Metropolitan Museum of Art
-* User can retrieve an artwork record, at random, from the collection of the Art Institute of Chicago
+* User can retrieve an artwork record from the collection of the Metropolitan Museum of Art
+* User can retrieve an artwork record from the collection of the Art Institute of Chicago
 * User can access information including the image, artist, title, date, medium, dimensions, and collection for each object record
+* User can generate an email that includes information about the current artwork including a link to its page on the museum website
 
 ## Built With
 * Vanilla JS
