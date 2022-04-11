@@ -2,12 +2,9 @@
 
 ## Description
 
-### This site has been rebuilt with additional functionalities using React: [https://github.com/jsteigelman/artflash-react](https://github.com/jsteigelman/artflash-react).
+### This project has been rebuilt (with additional functionalities) using React: [https://github.com/jsteigelman/artflash-react](https://github.com/jsteigelman/artflash-react).
 
 This project was an exercise in vanilla JS! Art Flash presents an artwork record (containing the image and full cataloging information) to the curious user. The artworks are selected from the collections of the Metropolitan Museum of Art and the Art Institute of Chicago.
-
-## Live Site URL
-[https://steigelman-art-flash.netlify.app/](https://steigelman-art-flash.netlify.app/)
 
 ## Functionality
 * User can retrieve an artwork record, at random, from the collection of the Metropolitan Museum of Art
