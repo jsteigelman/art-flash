@@ -4,7 +4,7 @@
 
 ### Please note: This project was built as an exercise in vanilla JS! It has since been turned into a new project (with additional functionalities) using React: [https://github.com/jsteigelman/docent-react](https://github.com/jsteigelman/docent-react).
 
-This project was an exercise in vanilla JS! Art Flash presents an artwork record (containing the image and full cataloging information) to the curious user. The artworks are selected from the collections of the Metropolitan Museum of Art and the Art Institute of Chicago.
+This project is an exercise in vanilla JS! Art Flash presents an artwork record (containing the image and full cataloging information) to the curious user. The artworks are selected from the collections of the Metropolitan Museum of Art and the Art Institute of Chicago.
 
 ## Functionality
 * User can retrieve an artwork record from the collection of the Metropolitan Museum of Art
